@@ -24,6 +24,7 @@ button {
   cursor: pointer;
 }
 
+/*Header section*/
 .header .logo {
   color: var(--text-main-color);
   font-family: 'Raleway';
@@ -81,6 +82,7 @@ button {
 .contacts .contacts-link:focus {
   color: var(--accent-color);
 }
+
 
 /*Hero*/
 .hero {
