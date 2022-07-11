@@ -15,6 +15,8 @@ body {
 .list {
   list-style: none;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -70,6 +72,11 @@ img {
 }
 
 /*Header section*/
+.header-container {
+  display: flex;
+  padding: 32px 0;
+  align-items: center;
+}
 .logo {
   color: var(--text-main-color);
   font-family: 'Raleway';
@@ -78,14 +85,29 @@ img {
   text-decoration: none;
   width: 145px;
   margin-left: 215px;
+  padding: 0;
+  margin: 0;
+  margin-right: 33px;
+  padding: 25px 0;
 }
 
 .logo-word {
   color: var(--accent-color);
 }
+.header-nav {
+  margin-right: auto;
+}
+.site-nav {
+  display: flex;
+  padding: 32px 0;
+}
 
 .header-mail {
   color: var(--accent-color);
+}
+.contacts-link {
+  min-width: 122px;
+ 
 }
 
 /*Site nav*/
@@ -122,6 +144,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .contacts .contacts-link:hover,
@@ -129,11 +152,21 @@ img {
   color: var(--accent-color);
 }
 
+.header-item:last-child {
+  margin-right: 0;
+}
+.header-mail {
+  margin-right: 50px;
+  width: 135px;
+}
+.header-phone {
+  width: 122px;
+}
+
 /*Hero*/
 .hero {
   background-color: #2f303a;
   text-align: center;
-  margin-top: 94px;
 }
 .hero-title {
   color: var(--text-color);
@@ -184,9 +217,20 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
+.features-title:last-child {
+  margin-right: 0;
+}
+.features-list {
+  display: block;
+  gap: 30px;
+}
 .features-discription {
   font-size: 14px;
   line-height: 1.71;
+}
+.features {
+  margin-bottom: 94px;
 }
 
 /*About section*/
@@ -196,6 +240,11 @@ img {
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
 }
 
 /*Team section*/
@@ -212,21 +261,26 @@ img {
 
 .section-title {
   margin-bottom: 50px;
+  padding-top: 94px;
 }
 .team-position {
   line-height: calc(19 / 16);
   text-align: center;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.teaam-item {
- 
-  margin-bottom: 50px;
- 
+.team-listt {
+  display: flex;
+  gap: 30px;
 }
 
-.subtitle  {
+.subtitle {
+  margin-top: 30px;
   margin-bottom: 10px;
 }
+
+
 
 /*Footer sectiom*/
 .footer {
@@ -242,6 +296,8 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 .contacts-item .contacts-link {
   font-family: normal;
@@ -302,17 +358,4 @@ img {
 
 .portfolio .link {
   text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }
