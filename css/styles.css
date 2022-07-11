@@ -11,6 +11,7 @@ body {
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
 }
+
 .list {
   list-style: none;
   cursor: pointer;
@@ -24,13 +25,56 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*base stile*/
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  width: 1200px;
+}
+
+.centered {
+  text-align: center;
+}
+
+img {
+  display: block;
+}
+
 /*Header section*/
-.header .logo {
+.logo {
   color: var(--text-main-color);
   font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  width: 145px;
+  margin-left: 215px;
 }
 
 .logo-word {
@@ -43,13 +87,15 @@ button {
 
 /*Site nav*/
 
-
 .link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .current {
   color: var(--accent-color);
@@ -58,9 +104,6 @@ button {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-
-
-
 
 .section-title {
   color: var(--title-text-color);
@@ -83,19 +126,22 @@ button {
   color: var(--accent-color);
 }
 
-
 /*Hero*/
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  margin-top: 94px;
 }
 .hero-title {
   color: var(--text-color);
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -105,15 +151,35 @@ button {
   line-height: calc(30 / 16);
   color: var(--text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
 }
 
 /*Features section*/
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .features .features-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .features-discription {
   font-size: 14px;
@@ -212,4 +278,17 @@ button {
 
 .portfolio .link {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
