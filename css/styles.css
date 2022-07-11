@@ -4,6 +4,10 @@
   --text-main-color: #000000;
   --text-color: #ffffff;
   --accent-color: #2196f3;
+
+  /*other*/
+  --indent: 30px;
+  --items: 3;
 }
 body {
   background-color: #fff;
@@ -51,6 +55,7 @@ ol {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 94px;
 }
 
 .section {
@@ -71,11 +76,30 @@ img {
   display: block;
 }
 
+/*card set*/
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: var(--indent);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(var(--indent)) * (var(--items)-1)) / var (--items));
+}
+
 /*Header section*/
+.header {
+  border: 1px solid transparent;
+  border-bottom: solid #ECECEC;
+    }
+
 .header-container {
   display: flex;
   padding: 32px 0;
   align-items: center;
+  border: ;
 }
 .logo {
   color: var(--text-main-color);
@@ -167,6 +191,11 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-container {
+  padding: 200px 452px 280px 452px;
 }
 .hero-title {
   color: var(--text-color);
@@ -296,9 +325,15 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  display: inline-block;
+ 
+}
+
+.footer-logo {
   padding-top: 60px;
   margin-bottom: 20px;
 }
+
 .contacts-item .contacts-link {
   font-family: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -322,9 +357,33 @@ img {
   font-style: normal;
 }
 
+.footer-container {
+  padding-bottom: 60px;
+}
+
 /*Portfolio*/
+.header-section {
+  display: flex;
+  margin-bottom: 94px;
+  
+}
+
 .portfolio-item {
   color: var(--title-text-color);
+}
+
+.container-contacts {
+  display: flex;
+  align-items: center;
+ 
+  
+}
+
+.container-filter {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter button {
@@ -336,6 +395,15 @@ img {
   line-height: calc(26 / 16);
   text-align: center;
   cursor: pointer;
+  Corner radius: 4px
+  padding: 6px 22px;
+  
+   
+}
+
+.filter
+{
+  margin-bottom: 34px;
 }
 
 .filter button:hover,
@@ -344,12 +412,33 @@ img {
   background-color: var(--accent-color);
 }
 
+/*рамка*/
+.portfolip-wrapper {
+  min-height: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid transparent;
+  border-bottom: solid #EEEEEE;
+  border-left: solid #EEEEEE;
+  border-right: solid #EEEEEE;
+  
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  
+}
 .portfolio .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .portfolio .text {
   color: var(--primary-text-color);
