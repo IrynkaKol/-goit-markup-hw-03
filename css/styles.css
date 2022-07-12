@@ -5,7 +5,7 @@
   --text-color: #ffffff;
   --accent-color: #2196f3;
 
-  /*other*/
+  /*otheborr*/
   --indent: 30px;
   --items: 3;
 }
@@ -98,8 +98,9 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  border: ;
+
 }
+
 .logo {
   color: var(--text-main-color);
   font-family: 'Raleway';
@@ -362,10 +363,22 @@ img {
 }
 
 /*Portfolio*/
+
+.portfolio-header {
+  margin-bottom: 94px;
+    border: 1px solid transparent;
+  border-bottom: solid #ECECEC;
+    }
+
+
 .header-section {
   display: flex;
-  margin-bottom: 94px;
-  
+  gap: 50px;
+   
+}
+
+.site-nav {
+  margin-right: 331px;
 }
 
 .portfolio-item {
@@ -375,6 +388,7 @@ img {
 .container-contacts {
   display: flex;
   align-items: center;
+  gap: 50px;
   
 }
 
@@ -396,8 +410,6 @@ img {
   cursor: pointer;
   Corner radius: 4px
   padding: 6px 22px;
-  
-   
 }
 
 .filter
@@ -409,7 +421,9 @@ img {
 .filter button:focus {
   color: var(--text-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
 }
+
 
 /*рамка*/
 .portfolip-wrapper {
@@ -446,4 +460,9 @@ img {
 
 .portfolio .link {
   text-decoration: none;
+}
+
+.footer-logo {
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
