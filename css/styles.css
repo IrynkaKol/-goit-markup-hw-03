@@ -91,7 +91,6 @@ img {
 
 /*Header section*/
 .header {
-  border: 1px solid transparent;
   border-bottom: solid #ECECEC;
     }
 
@@ -192,11 +191,13 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  margin-bottom: 50px;
+  padding: 200px 0;
+  
 }
 
 .hero-container {
-  padding: 200px 452px 280px 452px;
+ 
+  margin-bottom: 50px;
 }
 .hero-title {
   color: var(--text-color);
@@ -207,7 +208,9 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0 auto;
   margin-bottom: 30px;
+
 }
 
 .hero-button {
@@ -222,6 +225,10 @@ img {
   padding: 10px 32px;
   min-width: 200px;
   text-align: center;
+}
+
+.hero {
+ margin-bottom: 94px;
 }
 
 /*Features section*/
@@ -252,24 +259,34 @@ img {
   margin-right: 0;
 }
 .features-list {
-  display: block;
+  display: flex;
   gap: 30px;
 }
+
+.features-item {
+width: 270 px;
+}
+
 .features-discription {
   font-size: 14px;
   line-height: 1.71;
 }
-.features {
+.featere-contr {
   margin-bottom: 94px;
 }
 
 /*About section*/
+.section {
+  padding-bottom: 94px;
+}
+
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+
 }
 
 .about-list {
@@ -289,9 +306,13 @@ img {
   text-align: center;
 }
 
+.team-img {
+margin-top: 30px;
+}
+
 .section-title {
   margin-bottom: 50px;
-  padding-top: 94px;
+  
 }
 .team-position {
   line-height: calc(19 / 16);
@@ -300,11 +321,14 @@ img {
   font-size: 16px;
 }
 
-.team-listt {
+.team-list {
   display: flex;
   gap: 30px;
 }
-
+.description {
+  padding-top: 30px
+  padding-bottom: 30px;
+}
 .subtitle {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -315,6 +339,8 @@ img {
 /*Footer sectiom*/
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .footer-word {
   color: var(--accent-color);
@@ -327,13 +353,11 @@ img {
   line-height: 1.19;
   text-decoration: none;
   display: inline-block;
+  margin-bottom: 20px;
  
 }
 
-.footer-logo {
-  padding-top: 60px;
-  margin-bottom: 20px;
-}
+
 
 .contacts-item .contacts-link {
   font-family: normal;
@@ -347,12 +371,14 @@ img {
 }
 
 .footer .contacts-adress {
-  color: var(--text-color);
+    color: var(--text-color);
   background-color: #2f303a;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
-}
+  font-size: normal;
+ }
+
 .footer .contacts-adress:hover {
   color: var(--accent-color);
   font-style: normal;
@@ -360,6 +386,10 @@ img {
 
 .footer-container {
   padding-bottom: 60px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 9px;  
 }
 
 /*Portfolio*/
@@ -377,9 +407,7 @@ img {
    
 }
 
-.site-nav {
-  margin-right: 331px;
-}
+
 
 .portfolio-item {
   color: var(--title-text-color);
@@ -463,6 +491,5 @@ img {
 }
 
 .footer-logo {
-  padding-top: 60px;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
