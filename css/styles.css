@@ -55,7 +55,7 @@ ol {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+  
 }
 
 .section {
@@ -97,7 +97,6 @@ img {
 
 .header-container {
   display: flex;
-  padding: 32px 0;
   align-items: center;
   border: ;
 }
@@ -111,7 +110,7 @@ img {
   margin-left: 215px;
   padding: 0;
   margin: 0;
-  margin-right: 33px;
+  margin-right: 93px;
   padding: 25px 0;
 }
 
@@ -123,7 +122,8 @@ img {
 }
 .site-nav {
   display: flex;
-  padding: 32px 0;
+  gap: 50px;
+  
 }
 
 .header-mail {
@@ -143,8 +143,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: block;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .current {
   color: var(--accent-color);
@@ -375,7 +375,6 @@ img {
 .container-contacts {
   display: flex;
   align-items: center;
- 
   
 }
 
