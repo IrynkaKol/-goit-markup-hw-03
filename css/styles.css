@@ -48,6 +48,8 @@ ol {
   margin: 0;
 }
 
+
+
 /*base stile*/
 .container {
   width: 1200px;
@@ -109,8 +111,7 @@ img {
   width: 145px;
   margin-left: 215px;
   padding: 0;
-  margin: 0;
-  margin-right: 93px;
+  margin: auto;
   padding: 25px 0;
 }
 
@@ -227,9 +228,7 @@ img {
   text-align: center;
 }
 
-.hero {
- margin-bottom: 94px;
-}
+
 
 /*Features section*/
 
@@ -264,7 +263,7 @@ img {
 }
 
 .features-item {
-width: 270 px;
+width: 270px;
 }
 
 .features-discription {
@@ -272,13 +271,12 @@ width: 270 px;
   line-height: 1.71;
 }
 .featere-contr {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*About section*/
-.section {
-  padding-bottom: 94px;
-}
+
 
 .section-title {
   color: var(--title-text-color);
@@ -306,9 +304,7 @@ width: 270 px;
   text-align: center;
 }
 
-.team-img {
-margin-top: 30px;
-}
+
 
 .section-title {
   margin-bottom: 50px;
@@ -326,12 +322,12 @@ margin-top: 30px;
   gap: 30px;
 }
 .description {
-  padding-top: 30px
+  padding-top: 30px;
   padding-bottom: 30px;
+
 }
 .subtitle {
-  margin-top: 30px;
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -376,13 +372,17 @@ margin-top: 30px;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
-  font-size: normal;
+ font-style: normal;
+ }
+
+ 
+ address {
+  font-style: normal;
  }
 
 .footer .contacts-adress:hover {
   color: var(--accent-color);
-  font-style: normal;
-}
+ }
 
 .footer-container {
   padding-bottom: 60px;
@@ -391,6 +391,8 @@ margin-top: 30px;
 .contacts-item:not(:last-child) {
   margin-bottom: 9px;  
 }
+
+
 
 /*Portfolio*/
 
@@ -422,9 +424,10 @@ margin-top: 30px;
 
 .filter-nav {
   display: flex;
-  gap: 30px;
+  gap: 8px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter button {
@@ -440,9 +443,10 @@ margin-top: 30px;
   padding: 6px 22px;
 }
 
-.filter
+.portfolio
 {
-  margin-bottom: 34px;
+  padding-top: 34px;
+  padding-bottom: 94px;
 }
 
 .filter button:hover,
@@ -454,10 +458,9 @@ margin-top: 30px;
 
 
 /*рамка*/
-.portfolip-wrapper {
-  min-height: 80px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.portfolio-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 5px;
   padding-right: 5px;
   border: 1px solid transparent;
@@ -488,6 +491,8 @@ margin-top: 30px;
 
 .portfolio .link {
   text-decoration: none;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .footer-logo {
