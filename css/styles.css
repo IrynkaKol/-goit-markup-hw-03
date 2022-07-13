@@ -108,10 +108,8 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  width: 145px;
-  margin-left: 215px;
-  padding: 0;
-  margin: auto;
+    padding: 0;
+ margin-right: 93px;
   padding: 25px 0;
 }
 
@@ -130,11 +128,8 @@ img {
 .header-mail {
   color: var(--accent-color);
 }
-.contacts-link {
-  min-width: 122px;
- 
-}
 
+ 
 /*Site nav*/
 
 .link {
@@ -231,6 +226,10 @@ img {
 
 
 /*Features section*/
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -270,20 +269,19 @@ width: 270px;
   font-size: 14px;
   line-height: 1.71;
 }
-.featere-contr {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 
 /*About section*/
-
+.about {
+  padding-top: 0;
+}
 
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  padding-bottom: 50px;
+  
 
 }
 
@@ -335,8 +333,8 @@ width: 270px;
 /*Footer sectiom*/
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-bottom: 20px;
+ 
 }
 .footer .footer-word {
   color: var(--accent-color);
@@ -397,8 +395,7 @@ width: 270px;
 /*Portfolio*/
 
 .header-port {
-  margin-bottom: 94px;
-    border: 1px solid transparent;
+      border: 1px solid transparent;
   border-bottom: solid #ECECEC;
     }
 
@@ -434,6 +431,7 @@ width: 270px;
   font-family: inherit;
   color: var(--title-text-color);
   background-color: F5F4FA;
+  border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -445,7 +443,7 @@ width: 270px;
 
 .portfolio
 {
-  padding-top: 34px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -463,7 +461,6 @@ width: 270px;
   padding-bottom: 20px;
   padding-left: 5px;
   padding-right: 5px;
-  border: 1px solid transparent;
   border-bottom: solid #EEEEEE;
   border-left: solid #EEEEEE;
   border-right: solid #EEEEEE;
