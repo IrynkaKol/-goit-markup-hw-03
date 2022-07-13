@@ -29,6 +29,7 @@ body {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 h1,
@@ -430,9 +431,11 @@ width: 270px;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+ 
 }
 
-.portfolio-button {
+
+.button {
   font-family: inherit;
   color: var(--title-text-color);
   background-color: F5F4FA;
@@ -443,7 +446,7 @@ width: 270px;
   cursor: pointer;
   Corner radius: 4px
   border: none;
-  padding: 6px 22px;
+  
 }
 
   
@@ -504,3 +507,6 @@ width: 270px;
   
 }
 
+.filter-item {
+  padding: 6px 22px;
+}
